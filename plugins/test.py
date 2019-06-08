@@ -51,16 +51,7 @@ def echo(bot, update):
         # logger.info(response_json)
         keyboard = [[InlineKeyboardButton(text="ðŸ¤– Support Group", url="https://t.me/KeralasBots")]]
         update.effective_message.reply_text(reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
-                            
-     
-            bot.send_message(
-                chat_id=update.chat.id,
-                text=Translation.FORMAT_SELECTION,
-                reply_markup=reply_markup,
-                parse_mode=pyrogram.ParseMode.HTML,
-                reply_to_message_id=update.message_id
-            )
-
+        )
 
 
 
