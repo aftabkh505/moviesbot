@@ -54,7 +54,7 @@ def echo(bot, update):
             ikeyboard = [
                             pyrogram.InlineKeyboardButton(
                                  "Test",
-                                url="https://t.me/KeralasBots"
+                                url="https://t.me/KeralasBots".encode("UTF-8")
                             ),
                             reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
                             
@@ -65,7 +65,7 @@ def echo(bot, update):
             )
             bot.send_message(
                 chat_id=update.chat.id,
-                text=Translation.FORMAT_SELECTION.format(thumbnail),
+                text=Translation.FORMAT_SELECTION,
                 reply_markup=reply_markup,
                 parse_mode=pyrogram.ParseMode.HTML,
                 reply_to_message_id=update.message_id
