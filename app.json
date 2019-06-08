@@ -1,0 +1,68 @@
+{
+  "name": "MoviesBot",
+  "description": "Telegram's best Movie Downloader. Create your Fork now.",
+  "keywords": [
+    "telegram",
+    "best",
+    "movies",
+    "downloader",
+    "3"
+  ],
+  "repository": "https://github.com/anandvfc/AnyDLBot",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+      "value": "ANYTHING"
+    },
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "CHAT_BASE_TOKEN": {
+      "description": "Your chat base token, as a string.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "allow only pre-defined users to use this bot",
+      "value": "7351948 20516707 23122162 500346573 184752635"
+    },
+    "DOWNLOAD_LOCATION": {
+    "description": "proxy for accessing youtube-dl in GeoRestricted Areas. Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061",
+    "value": "./DOWNLOADS",
+    "required": false
+    },
+    "MAX_FILE_SIZE": {
+    "description": "proxy for accessing youtube-dl in GeoRestricted Areas. Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061",
+    "value": "50000000",
+    "required": false
+    },
+    "TG_MAX_FILE_SIZE": {
+      "description": "proxy for accessing youtube-dl in GeoRestricted Areas. Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061",
+      "value": "1572864000",
+      "required": false
+    },
+    "FREE_USER_MAX_FILE_SIZE": {
+    "description": "proxy for accessing youtube-dl in GeoRestricted Areas. Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061",
+    "value": "50000000",
+    "required": false
+    },
+    "DB_SQLALCHEMY": {
+    "description": "proxy for accessing youtube-dl in GeoRestricted Areas. Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061",
+    "value": "USERS.session",
+    "required": false
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+      "url": "heroku/python"
+  }]
+}
