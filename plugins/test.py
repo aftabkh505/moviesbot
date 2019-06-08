@@ -49,14 +49,8 @@ def echo(bot, update):
         )
         return
         # logger.info(response_json)
-        
-            inline_keyboard.append(ikeyboard)
-            ikeyboard = [
-                            pyrogram.InlineKeyboardButton(
-                                 "Test",
-                                url="https://t.me/KeralasBots".encode("UTF-8")
-                            ),
-                            reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard)
+        keyboard = [[InlineKeyboardButton(text="ðŸ¤– Support Group", url="https://t.me/KeralasBots")]]
+        update.effective_message.reply_text(reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
                             
                 # logger.info(reply_markup)
                 Translation.DOWNLOAD_START,
