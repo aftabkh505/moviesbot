@@ -49,8 +49,6 @@ def echo(bot, update):
         )
         return
         # logger.info(response_json)
-            inline_keyboard = []
-            
             ikeyboard = [
                             pyrogram.InlineKeyboardButton(
                                  "Test",
