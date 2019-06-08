@@ -1,9 +1,9 @@
 class Translation(object):
-    START_TEXT = """Thank You for using me.I was made by [This Noob](https://t.me/Anand_VFC)
+    START_TEXT = """Thank You for using me.
 
 /help to know how to use me
 
-Source Code: https://github.com/SpEcHiDe/AnyDLBot
+
 
 © For support join this [group](https://t.me/joinchat/JoNrMhTGJlh3DDHLkmTITg)"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
@@ -103,31 +103,7 @@ URL | filename | username | password"""
 Telegram ID: <code>{}</code>
 Plan name: <a href='https://t.me/SpEcHlDe/599'>{}</a>
 Expires on: {}"""
-    HELP_USER = """There are multiple things I can do:
-
-AVAILABLE COMMANDS ARE :
-
-/start - Check if bot is Online!
-/help - How to use this bot?
-/me - Check your subscription.
-/upgrade - Upgrade your subscription.
-/generatecustomthumbnail - Generate custom thumbnail.
-/deletethumbnail - Delete/clear saved custom thumbnail.
-/converttovideo - Convert to streamable Video.
-/converttoaudio - Convert video Files in Telegram to Audio
-/rename - (Long Press) and Rename Telegram Media.
-/extractstreams - Extract Streams from Telegram media.
-/ffmpegrobot - Get Info.
-/trim (Long Press) and Enter TimeStamp.
-/downloadmedia - Download media to Storage.
-/storageinfo - Get info about currently saved Media.
-/clearffmpegmedia - Clear stored Media from Storage.
-/unzip - Extract Compressed Files.
-/getlink - Get Direct Download Link.
-
-👉 PLUS, all newly features that are going to be added in the feature*.
--------------------------------------
-Send /me to know current plan details"""
+    HELP_USER = """coming soon """
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
     REPLY_TO_DOC_FOR_RENAME_FILE = "Reply to a Telegram media to /rename with custom thumbnail support"
