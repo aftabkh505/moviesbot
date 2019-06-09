@@ -15,7 +15,7 @@ import requests
 import subprocess
 import time
 
-from telegram import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
+from pyrogram import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
