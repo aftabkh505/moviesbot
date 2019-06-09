@@ -44,7 +44,7 @@ def echo(bot, update):
         bot.send_message(
             chat_id=update.chat.id,
             text=Translation.ABUSIVE_USERS,
-            reply_markup = pyrogram.InlineKeyboardMarkup(inline_keyboard),
+            reply_markup = pyrogram.InlineKeyboardMarkup(keyboard),
             disable_web_page_preview=True, 
             parse_mode=pyrogram.ParseMode.MARKDOWN,
             reply_to_message_id=update.message_id,
