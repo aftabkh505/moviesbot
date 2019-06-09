@@ -48,6 +48,7 @@ def echo(bot, update):
             parse_mode=pyrogram.ParseMode.HTML
         )
         return
+logger.info(update.from_user)
       bot.send_message(
             chat_id=update.chat.id,
             text=Translation.HELP_USER,
