@@ -2,3 +2,4 @@ requests
 git+git://github.com/google/chatbase-python.git
 pyrogram[fast]
 pyrogram
+telegram
