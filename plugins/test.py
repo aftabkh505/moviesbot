@@ -44,8 +44,6 @@ def echo(bot, update):
             chat_id=update.chat.id,
             text=Translation.ABUSIVE_USERS,
             reply_to_message_id=update.message_id,
-            disable_web_page_preview=True,
-            parse_mode=pyrogram.ParseMode.HTML
         )
         return
 
