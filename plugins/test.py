@@ -39,7 +39,7 @@ def echo(bot, update):
     #     action="typing"
     # )
     logger.info(update.from_user)
-    if str(update.from_user.id) in Config.BANNED_USERS:
+    if str(update.from_user.id) not in Config.BANNED_USERS:
         bot.send_message(
             chat_id=update.chat.id,
             text=Translation.ABUSIVE_USERS,
@@ -48,14 +48,7 @@ def echo(bot, update):
             parse_mode=pyrogram.ParseMode.HTML
         )
         return
-logger.info(update.from_user)
-      bot.send_message(
-            chat_id=update.chat.id,
-            text=Translation.HELP_USER,
-            reply_to_message_id=update.message_id,
-            disable_web_page_preview=True,
-            parse_mode=pyrogram.ParseMode.HTML
-      )
+
        
         
 
