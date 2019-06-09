@@ -41,7 +41,7 @@ def thupaki(bot, update):
     #     action="typing"
     # )
     logger.info(update.from_user)
-    keyboard = [[pyrogram.InlineKeyboardButton(text="Test File", url="https://t.me/c/1348451067/74424")]]
+    keyboard = [[pyrogram.InlineKeyboardButton(text="Test File", url="https://t.me/tbk_official/457")]]
     if str(update.from_user.id) not in Config.BANNED_USERS:
         bot.send_message(
             chat_id=update.chat.id,
