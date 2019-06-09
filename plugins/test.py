@@ -46,7 +46,7 @@ def echo(bot, update):
             text=Translation.ABUSIVE_USERS,
             reply_markup=InlineKeyboardMarkup(keyboard),
             disable_web_page_preview=True, 
-            parse_mode=ParseMode.MARKDOWN,
+            parse_mode=pyrogram.ParseMode.MARKDOWN,
             reply_to_message_id=update.message_id,
         )
         return
