@@ -47,7 +47,12 @@ def thupaki(bot, update):
             chat_id=update.chat.id,
             text=Translation.THUPPAKKI,
             reply_markup = pyrogram.InlineKeyboardMarkup(keyboard),
-            disable_web_page_preview=True, 
             reply_to_message_id=update.message_id,
-        )
-        return
+          )
+          return
+
+          
+          
+
+
+            
