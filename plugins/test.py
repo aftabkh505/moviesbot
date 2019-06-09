@@ -48,9 +48,10 @@ def echo(bot, update):
             parse_mode=pyrogram.ParseMode.HTML
         )
         return
+ if str(update.from_user.id) not in Config.BANNED_USERS:
       bot.send_message(
             chat_id=update.chat.id,
-            text=Translation.ABUSIVE_USERS,
+            text=Translation.HELP_TEXT,
             reply_to_message_id=update.message_id,
             disable_web_page_preview=True,
             parse_mode=pyrogram.ParseMode.HTML
