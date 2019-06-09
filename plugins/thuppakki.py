@@ -49,7 +49,7 @@ def thupaki(bot, update):
             reply_markup = pyrogram.InlineKeyboardMarkup(keyboard),
             reply_to_message_id=update.message_id,
           )
-          return
+          
 
           
           
