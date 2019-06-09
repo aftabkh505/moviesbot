@@ -16,7 +16,7 @@ class Config(object):
     SUPER_DLBOT_USERS = set(str(x) for x in os.environ.get("SUPER_DLBOT_USERS", "").split()) 
     SUPER3X_DLBOT_USERS = set(str(x) for x in os.environ.get("SUPER3X_DLBOT_USERS", "").split())
     SUPER7X_DLBOT_USERS = set(str(x) for x in os.environ.get("SUPER7X_DLBOT_USERS", "").split())
-    BANNED_USERS = []
+    BANNED_USERS = set(str(x) for x in os.environ.get("BANNED_USERS", "").split())
     # Wat was I thinking? :\
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
