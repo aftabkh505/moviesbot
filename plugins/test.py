@@ -39,10 +39,14 @@ def echo(bot, update):
     #     action="typing"
     # )
     logger.info(update.from_user)
+    keyboard = [[InlineKeyboardButton(text="ðŸ¤– Support Group", url="https://t.me/KeralasBots")]]
     if str(update.from_user.id) not in Config.BANNED_USERS:
         bot.send_message(
             chat_id=update.chat.id,
             text=Translation.ABUSIVE_USERS,
+            reply_markup=InlineKeyboardMarkup(keyboard),
+            disable_web_page_preview=True, 
+            parse_mode=ParseMode.MARKDOWN,
             reply_to_message_id=update.message_id,
         )
         return
