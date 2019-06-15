@@ -32,7 +32,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from helper_funcs.chat_base import TRChatBase
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*test.*"))
+@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*.*"))
 def echo(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/echo")
