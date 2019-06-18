@@ -36,13 +36,7 @@ from helper_funcs.chat_base import TRChatBase
 def thupaki(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/thupaki")
-    # bot.send_chat_action(
-    #     chat_id=update.chat.id,
-    #     action="typing"
-    # )
-    logger.info(update.from_user)
-    keyboard = [[pyrogram.InlineKeyboardButton(text="Test File", url="https://t.me/tbk_official/457")]]
-    if str(update.from_user.id) not in Config.BANNED_USERS:
+    keyboard = [[pyrogram.InlineKeyboardButton(text="400 MB", url="https://t.me/tbk_official/457")]]
         bot.send_message(
             chat_id=update.chat.id,
             text=Translation.THUPPAKKI,
