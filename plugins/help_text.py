@@ -19,7 +19,6 @@ else:
 
 # the Strings used for this "thing"
 from translation import Translation
-from .thuppakki import thupaki
 
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
@@ -30,7 +29,6 @@ from helper_funcs.chat_base import TRChatBase
 @pyrogram.Client.on_message(pyrogram.Filters.command(["help", "about"]))
 def help_user(bot, update):
     # logger.info(update)
-    keyboard = [[pyrogram.InlineKeyboardButton(text="Thuppakki", callback_data=thupaki)]]
     TRChatBase(update.from_user.id, update.text, "/help")
     bot.send_message(
         chat_id=update.chat.id,
