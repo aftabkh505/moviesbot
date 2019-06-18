@@ -37,6 +37,7 @@ def thupaki(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/thupaki")
     keyboard = [[pyrogram.InlineKeyboardButton(text="400 MB", url="https://t.me/tbk_official/457")]]
+    if str(update.from_user.id) not in Config.BANNED_USERS:
         bot.send_message(
             chat_id=update.chat.id,
             text=Translation.THUPPAKKI,
