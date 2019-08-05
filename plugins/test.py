@@ -36,10 +36,10 @@ from helper_funcs.chat_base import TRChatBase
 def echo(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/echo")
-    # bot.send_chat_action(
-    #     chat_id=update.chat.id,
-    #     action="typing"
-    # )
+     bot.send_chat_action(
+         chat_id=update.chat.id,
+         action="typing"
+      )
     logger.info(update.from_user)
     keyboard = [[pyrogram.InlineKeyboardButton(text="ðŸ¤– Support Group", url="https://t.me/KeralasBots")]]
     if str(update.from_user.id) not in Config.BANNED_USERS:
