@@ -41,12 +41,10 @@ def echo(bot, update):
          #action="typing"
       #)
     logger.info(update.from_user)
-    keyboard = [[pyrogram.InlineKeyboardButton(text= 📢Support Group", url="https://t.me/KeralasBots")]]
     if str(update.from_user.id) not in Config.BANNED_USERS:
         bot.send_message(
             chat_id=update.chat.id,
             text=Translation.CHAT_TEXT,
-            reply_markup = pyrogram.InlineKeyboardMarkup(keyboard),
             disable_web_page_preview=True, 
             reply_to_message_id=update.message_id,
         )
