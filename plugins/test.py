@@ -32,14 +32,14 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 from helper_funcs.chat_base import TRChatBase
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*test.*"))
+@pyrogram.Client.on_message(pyrogram.Filters.regex(pattern=".*.*"))
 def echo(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/echo")
-     bot.send_chat_action(
-         chat_id=update.chat.id,
-         action="typing"
-      )
+     #bot.send_chat_action(
+         #chat_id=update.chat.id,
+         #action="typing"
+      #)
     logger.info(update.from_user)
     keyboard = [[pyrogram.InlineKeyboardButton(text= 📢Support Group", url="https://t.me/KeralasBots")]]
     if str(update.from_user.id) not in Config.BANNED_USERS:
